@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 offset-sm-2">
+      <h1>Add a New Cocktail</h1>
+      <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.input :name %>
+        <div class="d-flex justify-content-center">
+          <%= f.submit "Add Cocktail", class: "btn btn-success" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
